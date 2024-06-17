@@ -1,0 +1,246 @@
+*
+{
+    font-family: "Roboto";
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;
+    z-index: 999;
+}
+.left {
+    margin-left: 100px;
+}
+.left a {
+    text-decoration: none;
+    text-shadow: 2px 1px 2px wheat;
+    font-family: "Roboto";
+    font-style: italic;
+    color: #f9f9f9;
+}
+.middle {
+    display: flex;
+    align-items: center;
+}
+.middle input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    outline: none;
+}
+.middle button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.middle button:hover {
+    background-color: #45a049;
+}
+.right {
+    margin-right: 100px;
+}
+.right a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    margin: 0 8px;
+}
+.right i {
+    margin-left: 50px;
+    font-size: 1.9rem;
+    color: white;
+    text-align: start;
+}
+main {
+    margin-top: 15vh; 
+}
+.fruit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.fruit-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #fff;
+}
+.fruit-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.img-box {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* 4:3 Aspect Ratio */
+    overflow: hidden;
+    position: relative;
+}
+.img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content {
+    padding: 10px;
+}
+.name {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.price {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+.add-to-cart button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.add-to-cart button:hover {
+    background-color: darkgreen;
+}
+.quantity {
+    margin-bottom: 10px;
+}
+.quantity input {
+    width: 50px;
+    text-align: center;
+}
+
+footer 
+{
+    margin: 40px 0 0;
+    height: 24vh;
+    font-family: "Roboto";
+    color: white;
+    display:flex;
+    flex-direction: column;
+    background-color:green;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 60px 0 ;
+}
+.footer-content,.footer-info,.social-links
+{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-info  h3,.social-links h3 
+{
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+
+}
+.social-links 
+{
+    margin-top: 12px;
+}
+.footer-info p 
+{
+    margin: 4px 0;
+   font-size: 16px;
+}
+.social-links ul
+{
+    margin: 8px 0 4px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-links li a i
+{
+    font-size: 1.4rem;
+  text-align: center;
+  color: white;
+
+}
+.copyright 
+{
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 100%;
+    height: 34px;
+    background-color: darkgreen;
+}
+
+@media (max-width:450px) {
+*
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+}
+.left{
+    margin-left: 12px;
+}
+.middle
+{
+    display: none;
+}
+.right 
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.right a 
+{
+    margin:auto 4px;
+    padding: auto;
+    font-size: 24px;
+}
+.right i 
+{
+    margin:auto;
+    padding: auto;
+
+}
+
+}
