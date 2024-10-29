@@ -131,7 +131,7 @@ marquee {
 .bestsellers {
     border: 2px dotted grey;
     display: inline-block;
-    margin-left: 56px;
+    margin-left:40px;
     padding: 50px;
 }
 
